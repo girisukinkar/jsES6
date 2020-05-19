@@ -15,3 +15,7 @@ Object literals, if inside the function the Key and property value has same name
 ### `18-May-2020`
 
 Revisioned promises , callbacks and new async await which is actually syntactical sugar for .then .catch to write synchronous code
+
+### `20-May-2020`
+
+Arrow vs Regular Functions, their scope, minimalistic approach and clean way to write functions
