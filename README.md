@@ -19,3 +19,4 @@ Revisioned promises , callbacks and new async await which is actually syntactica
 ### `20-May-2020`
 
 Arrow vs Regular Functions, their scope, minimalistic approach and clean way to write functions
+> ``` let xyz = () => { } AND function xyz() { } ```
