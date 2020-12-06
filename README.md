@@ -20,3 +20,22 @@ Revisioned promises , callbacks and new async await which is actually syntactica
 
 Arrow vs Regular Functions, their scope, minimalistic approach and clean way to write functions
 > ``` let xyz = () => { } AND function xyz() { } ```
+
+## DOM manipulation is Expensive for Eg.
+    
+     You can append elements in the loop continuosly or keep them ready and append all
+ ``` javascript
+//BAD CODE : costs 33ms
+for(let i=0; i< 10000; i++){
+  const p = document.createElement('p');
+  document.body.appendChild(p); //manipulating dom every on every interation is costly
+}
+
+ //GOOD CODE: costs 20ms
+ const fragment = document.createDocumentFragment();
+for(let i=0; i< 10000; i++){
+  const p = document.createElement('p');
+  fragment.appendChild(p);
+}
+  document.body.appendChild(fragment);
+   ```
