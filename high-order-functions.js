@@ -26,3 +26,10 @@ if(found){
     const user = users.filter(user => user.id === 2  );
     const {id: id , name: name} = user[0];
 }
+
+
+// FIND :  returns 1 entry of the value/object
+
+const userDevil = users.find(user => user.id === 2);
+console.log(userDevil);
+
