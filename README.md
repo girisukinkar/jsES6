@@ -39,3 +39,22 @@ for(let i=0; i< 10000; i++){
 }
   document.body.appendChild(fragment);
    ```
+
+## some and every functions
+
+  Both some and every function will return boolean, as per their name some will check if atleast one is true and every checks if everything satisfies the condition
+
+``` javascript
+  const userExists = users.some(user => user.id === 1);
+  const allRegistered = users.every(user => user.status === 'registered');
+```
+
+
+## find function    
+
+  It returns single value/object as per the condition
+
+```javascript
+const user = users.find(user => user.id ===2 )
+//Output : {id: 2, name: "Devil", complete: true} even if there are 100s of user with id 2 or name Devil
+```
