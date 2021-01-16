@@ -58,3 +58,16 @@ for(let i=0; i< 10000; i++){
 const user = users.find(user => user.id ===2 )
 //Output : {id: 2, name: "Devil", complete: true} even if there are 100s of user with id 2 or name Devil
 ```
+
+
+## What is default export
+	
+   we can use alias for the function or object we exported eg. import prs from './person.js' where in person.js the export was export default person;
+
+## What is named export
+
+   we cannot rename the methods or properties which are exported eg. export const name = 'Girish';
+	we need to use 
+```javascript 
+import name from './person.js';
+```
