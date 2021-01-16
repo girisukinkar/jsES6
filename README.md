@@ -71,3 +71,22 @@ const user = users.find(user => user.id ===2 )
 ```javascript 
 import name from './person.js';
 ```
+
+## Can we extend class and access the derived class properties and values?
+
+  Yes we can access the derived class values but before calling the methods or properties we need to use super(); in our parent constructor 
+
+```javascript 
+class Person extends Human { 
+
+    constructor(){
+        super();
+        this.name  = "Girish";       
+    }
+
+    getValueOfOtherClass(){
+      console.log(`Hi i am the property of Human class ${this.gender});
+    }
+}
+```
+  Note : we can modify the properties inside the parent constructor eg this.gender = "new value";
