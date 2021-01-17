@@ -90,3 +90,4 @@ class Person extends Human {
 }
 ```
   Note : we can modify the properties inside the parent constructor eg this.gender = "new value";
+
