@@ -93,10 +93,13 @@ class Person extends Human {
 
 ## Deep copy 
 
-  when JavaScript objects including arrays are deeply nested, the spread operator only copies the first level with a new reference, but the deeper values are still linked together. So inorder to make a change in the new copy of it we need deep copy 
+  when JavaScript objects including arrays are deeply nested, the spread operator only copies the first level with a new reference, but the deeper values are still linked together. So inorder to make a change in the new copy of it we need deep copy.
+
+  TO make deep copy use library called loadash or ramada or make custom function
 
 ```javascript 
     E.g const obj = { name : "Girish" , age: 27};
           const copyObj = obj // Shallow copy
           obj.name = "Dexter"
           console.log(copyObj.name) //Dexter
+
