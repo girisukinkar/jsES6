@@ -91,3 +91,12 @@ class Person extends Human {
 ```
   Note : we can modify the properties inside the parent constructor eg this.gender = "new value";
 
+## Deep copy 
+
+  when JavaScript objects including arrays are deeply nested, the spread operator only copies the first level with a new reference, but the deeper values are still linked together. So inorder to make a change in the new copy of it we need deep copy 
+
+```javascript 
+    E.g const obj = { name : "Girish" , age: 27};
+          const copyObj = obj // Shallow copy
+          obj.name = "Dexter"
+          console.log(copyObj.name) //Dexter
