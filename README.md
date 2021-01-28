@@ -102,4 +102,4 @@ class Person extends Human {
           const copyObj = obj // Shallow copy
           obj.name = "Dexter"
           console.log(copyObj.name) //Dexter
-
+```
