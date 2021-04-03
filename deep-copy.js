@@ -15,7 +15,7 @@ console.log('Changing value of first element to 10');
 regularArray[0][0] = 10; //this will affect the nestedCopyWithSpread as well check it out
 console.log('Normal Array',regularArray);
 console.log('Copy of Regular Array', nestedCopyWithSpread);
-console.log('Deep copy');
+
 const deepCopyOfRegularArray = deepCopyFunction(regularArray);
 console.log('DEEP COPY', deepCopyOfRegularArray);
 console.log('Changing values again');
