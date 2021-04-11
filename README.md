@@ -103,3 +103,7 @@ class Person extends Human {
           obj.name = "Dexter"
           console.log(copyObj.name) //Dexter
 ```
+
+## Closures
+
+    A function along who can access its outer lexical scope forms a closure.
