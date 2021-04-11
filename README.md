@@ -107,3 +107,16 @@ class Person extends Human {
 ## Closures
 
     A function along who can access its outer lexical scope forms a closure.
+
+```javascript
+
+  function foo(){
+    const name = 'Closure';
+
+    function bar(){
+      console.log(name);
+    }
+    
+  }
+
+```
