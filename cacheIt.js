@@ -1,6 +1,5 @@
 // Using closures we can cach any operation to improve performance
 
-
 function createFetchSuggestios () {
     const cache = {}
 
@@ -9,13 +8,13 @@ function createFetchSuggestios () {
         if (!query) return
         if (query in cache) {
             console.log('Fetching items from cacheee')
+            console.log(cache)
             return cache[query];
         }
 
         console.log('Fetching Records')
         const response = await fetch('json/real_users_list.json')
         const res = await response.json()
-        // console.log(res)
 
         const lowerCasedSearch = query.toLowerCase();
 
